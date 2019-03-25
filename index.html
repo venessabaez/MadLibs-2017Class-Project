@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome | MADeveloperLibs</title>
+
+<link href="https://fonts.googleapis.com/css?family=Kalam|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+	<div id="typewriter" style="display: inline;">
+			<div id="typewriterPaper">
+	    	<h1>Fill in the <span>blanks</span> and let&rsquo;s get started!</h1>
+	        <!--Entry1-->
+					<div id="entry1" style="display: inline;">
+							<form>
+				        <center>
+					        <input type="text" id="libStudent" placeholder="Your name" required><br><br>
+									<button type="button" onclick="validateName()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry1-->
+
+					<div id="entry2" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libSchool" placeholder="Name of your school county" required><br><br>
+									<button type="button" onclick="validateSchool()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry2-->
+
+					<div id="entry3" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libHobby" placeholder="A hobby" required><br><br>
+									<button type="button" onclick="validateHobby()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry3-->
+
+					<div id="entry4" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libPlatform" placeholder="Your favorite social media network" required><br><br>
+									<button type="button" onclick="validatePlatform()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry4-->
+
+					<div id="entry5" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libEmotion" placeholder="A type of emotion" required><br><br>
+									<button type="button" onclick="validateEmotion()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry5-->
+
+					<div id="entry6" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libHours" placeholder="A number" required><br><br>
+									<button type="button" onclick="validateHours()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry6-->
+
+					<div id="entry7" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libGrade" placeholder="A letter" maxlength="1" required><br><br>
+									<button type="button" onclick="validateGrade()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry7-->
+
+					<div id="entry8" style="display: none;">
+							<form>
+				        <center>
+					        <input type="text" id="libColor" placeholder="A color" required><br><br>
+									<button type="button" onclick="validateColor()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry 8-->
+
+					<div id="entry9" style="display: none;">
+							<form>
+								<center>
+									<input type="text" id="libNoun" placeholder="A Noun" required><br><br>
+									<button type="button" onclick="validateNoun()">NEXT</button>
+								</center>
+							</form>
+
+					</div> <!--End Entry9-->
+
+					<div id="entry10" style="display: none;">
+								<form>
+									<center>
+										<input type="text" id="libUsers" placeholder="Another number" required><br><br>
+										<button type="button" onclick="submitVariables()">NEXT</button>
+									</center>
+								</form>
+
+						</div> <!--End Entry10-->
+						<p id="errorMessage"></p>
+			</div>
+    </div>
+
+ 	<div id="pages" style="display: none;">
+				<div id="spreadOne" style="display: none;">
+		        <div class="leftPage">
+	          		<img src="images/college.jpg" alt="storybook image">
+		        </div> <!--end left pages-->
+
+	        	<div class="rightPage">
+	              <h1><span>&Ofr;</span>nce upon a time,</h1>
+	              <p>there was a student named <span id="storyStudent">AFTER YOU</span>.</p>
+	              <p>They had big dreams of becoming a full-stack web developer, so they enrolled in a javascript class at <span id="storySchool">YOUR</span> Community College!</p>
+ 								<center><h3 onclick="forwardPage()">&rAarr;</h3></center>
+						</div> <!--end rightPage-->
+			</div>  <!--end of Spread One-->
+
+			<div id="spreadTwo" style="display: none;">
+					<div class="leftPage">
+							<img src="images/idea.jpg" alt="storybook image">
+					</div> <!--end left pages-->
+					<div class="rightPage">
+							<p><span id="storyStudent2">STUDENT NAME</span> was a really big fan of <span id="storyHobby">a certain hobby</span>.</p>
+							<p>They decided that they would use the skills learned in this class to create a website around this hobby. Their goal was for this website to have more users than <span id="storyPlatform">their favorite social media platform.</span>.</p>
+							<p>What an exciting venture!</p>
+
+							<center><h3 onclick="previousPage()">&lAarr;</h3>
+							<h3 onclick="forwardPage()">&rAarr;</h3></center>
+					</div> <!--end rightPage-->
+			</div>  <!--end of Spread Two-->
+
+			<div id="spreadThree" style="display: none;">
+					<div class="leftPage">
+							<img src="images/working.jpg" alt="storybook image">
+					</div> <!--end left pages-->
+
+					<div class="rightPage">
+							<p><span id="storyStudent3">You</span> worked really hard on their project. They didn&rsquo;t realize just how hard javascript would be!</p>
+							<p>They spent a total of <span id="storyHours">MANY</span> hours working on their project. It made them feel very <span id="storyEmotion">EMOTIONAL</span>!</p>
+
+							<center><h3 onclick="previousPage()">&lAarr;</h3>
+							<h3 onclick="forwardPage()">&rAarr;</h3></center>
+					</div> <!--end rightPage-->
+			</div>  <!--end of Spread Three-->
+
+			<div id="spreadFour" style="display: none;">
+					<div class="leftPage">
+							<img src="images/celebrate.jpg" alt="storybook image">
+					</div> <!--end left pages-->
+
+					<div class="rightPage">
+							<p>In the end, <span id="storyStudent4">YOU</span> submitted their project and got a <span id="storyGrade">GRADE</span> in the class. It was a well-deserved grade!</p><br>
+							<p>After working a little more on the project, the website was launched. It was called <span id="storyColor">COLOR</span> <span id="storyHobby2">HOBBY</span> <span id="storyNoun">NOUN</span>.</p>
+							<br>
+							<p>Within a day, the website had <span id="storyUsers">MANY</span> users. It eventually became more popular than <span id="storyPlatform2"></span>.</p>
+							<br>
+							<p>The End!</p>
+
+							<center>
+							<h3 onclick="forwardPage()">&rAarr;</h3></center>
+					</div> <!--end rightPage-->
+			</div>  <!--end of Spread Four-->
+
+			<div id="closingPage" style="display: none;">
+					<div class="leftPage">
+						<p style="text-align: center; color: pink; font-size: 500px; line-height: 60%;">&hearts;</p>
+					</div> <!--end left pages-->
+					<div class="rightPage">
+							<h1>Thanks for playing!</h1>
+							<p style="font-size: .75em;">Design, development, and illustrations by Venessa Baez</p>
+ 					</div> <!--end rightPage-->
+			</div>  <!--end of closingPage-->
+</div> <!--end pages-->
+
+
+</body>
+</html>

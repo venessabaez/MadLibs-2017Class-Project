@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ////// END CSS RESET ////// */
+/* ////// BEGIN CSS DOCUMENT ////// */
+
+body {
+	background-color: #357994;
+	font-family: 'Roboto Slab', serif;
+}
+
+p {
+	font-size: 1em;
+	line-height: 200%;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 180%;
+}
+
+h1 span {
+	/*Only Use for Drop Caps */
+	font-size: 3em;
+ }
+
+h2 {
+	font-size: 1.5em;
+	display: inline;
+}
+
+h3 {
+	/*only use h3 for page arrows*/
+	font-size: 6em;
+	display: inline;
+	cursor: pointer;
+}
+
+input {
+	border: 1px solid #e4e4e4;
+}
+
+#typewriter {
+ }
+
+#typewriterPaper {
+	width: 750px;
+	height: 200px;
+	background-color: tan;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 50px;
+	padding-bottom: 150px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf9e5+0,fef8ca+80,d1c5a7+99 */
+		background: #fcf9e5; /* Old browsers */
+		background: -moz-linear-gradient(top, #fcf9e5 0%, #fef8ca 80%, #d1c5a7 99%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #fcf9e5 0%,#fef8ca 80%,#d1c5a7 99%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #fcf9e5 0%,#fef8ca 80%,#d1c5a7 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf9e5', endColorstr='#d1c5a7',GradientType=0 ); /* IE6-9 */
+ }
+
+#typewriterPaper h1 {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#typewriterPaper h1 span {
+	text-decoration: underline;
+	font-family: 'Kalam', cursive;
+	font-size: 1.25em;
+}
+
+#typewriterPaper input {
+	height: 25px;
+	width: 400px;
+	font-size: 1em;
+	padding: 10px;
+}
+
+#typewriterPaper select {
+	height: 25px;
+	width: 430px;
+	font-size: 1em;
+	padding: 10px;
+}
+
+#typewriterPaper button {
+	color: #ffffff;
+	background-color: #25272e;
+	border: none;
+	width: 200px;
+	height: 50px;
+	margin-top: 20px;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+#errorMessage {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+#pages {
+ }
+
+.leftPage {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf9e5+0,fef8ca+80,d1c5a7+99 */
+	/* Background Gradient */
+		background: #fcf9e5; /* Old browsers */
+		background: -moz-linear-gradient(left, #fcf9e5 0%, #fef8ca 80%, #d1c5a7 99%, #d1c5a7 99%, #87866c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #fcf9e5 0%,#fef8ca 80%,#d1c5a7 99%,#d1c5a7 99%,#87866c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #fcf9e5 0%,#fef8ca 80%,#d1c5a7 99%,#d1c5a7 99%,#87866c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf9e5', endColorstr='#87866c',GradientType=1 ); /* IE6-9 */
+	width: 450px;
+	height: 450px;
+	padding: 50px;
+	float: left;
+}
+
+.leftPage img {
+	border: 5px solid purple;
+}
+
+.rightPage {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1c5a7+0,fef8ca+18,fcf9e5+100 */
+	/* Background Gradient */
+		background: #d1c5a7; /* Old browsers */
+		background: -moz-linear-gradient(left, #d1c5a7 0%, #fef8ca 18%, #fcf9e5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #d1c5a7 0%,#fef8ca 18%,#fcf9e5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #d1c5a7 0%,#fef8ca 18%,#fcf9e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1c5a7', endColorstr='#fcf9e5',GradientType=1 ); /* IE6-9 */
+ 		width: 450px;
+		height: 450px;
+		padding: 100px 50px 00px 50px;
+		float: left;
+}
+
+.rightPage p span {
+	font-family: 'Kalam', cursive;
+	text-decoration: underline;
+}
